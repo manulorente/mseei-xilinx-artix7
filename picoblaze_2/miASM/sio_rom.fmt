@@ -1,0 +1,178 @@
+                  ;========================================================
+                  ; MSEEI 2019/20
+                  ; Diseño de Sistemas Empotrados Basados en FPGAs
+                  ;
+                  ; Square circuit with simple I/O interface
+                  ;========================================================
+                  ;Program operation:
+                  ;  - read switch to a (4 MSBs) and b (4 LSBs)
+                  ;  - calculate a*a + b*b
+                  ;  - display data on 8 leds
+                  ;========================================================
+                  ; Dataconstant
+                  ;========================================================
+                  CONSTANT UP_NIBBLE_MASK, 0F ;00001111
+                  ;========================================================
+                  ; Dataram address alias
+                  ;========================================================
+                  CONSTANT a_lsb, 00
+                  CONSTANT b_lsb, 02
+                  CONSTANT aa_lsb, 04
+                  CONSTANT aa_msb, 05
+                  CONSTANT bb_lsb, 06
+                  CONSTANT bb_msb, 07
+                  CONSTANT aabb_lsb, 08
+                  CONSTANT aabb_msb, 09
+                  CONSTANT aabb_cout, 0A
+                  ;========================================================
+                  ; Register alias
+                  ;========================================================
+                  ;commonly used local variables
+                  NAMEREG s0, data            ;reg for temporary data
+                  NAMEREG s1, addr            ;reg for temporary mem & i/o port addr
+                  NAMEREG s2, i               ;general purpose loop index
+                  ;global variables
+                  NAMEREG sF, sw_in
+                  ;========================================================
+                  ; Port alias
+                  ;========================================================
+                  ;------------input port definitions----------------------
+                  CONSTANT sw_port, 01        ;8-bit switches
+                  ;------------output port definitions---------------------
+                  CONSTANT led_port, 05
+                  ;========================================================
+                  ; Main program
+                  ;========================================================
+                  ;Calling hierarchy:
+                  ;
+                  ;main
+                  ;  - clr_data_mem
+                  ;  - read_switch
+                  ;      - get_upper_nibble
+                  ;      - get_lower_nibble
+                  ;  - square
+                  ;      - mult_soft
+                  ;  - write_led
+                  ;
+                  CALL clr_data_mem
+         forever: 
+                  CALL read_switch
+                  CALL square
+                  CALL write_led
+                  JUMP forever
+                  ;========================================================
+                  ;routine: clr_data_mem
+                  ;  function: clear data ram
+                  ;  temp register: data, i
+                  ;========================================================
+    clr_data_mem: 
+                  LOAD i, 40                  ;unitize loop index to 64
+                  LOAD data, 00
+    clr_mem_loop: 
+                  SUB i, 01                   ;dec loop index
+                  STORE data, (i)
+                  JUMP NZ, clr_mem_loop       ;repeat until i=0
+                  RETURN 
+                  ;========================================================
+                  ;routine: read switch
+                  ;  function: obatin two nibbles from input
+                  ;  input register: sw_in
+                  ;  temp register: data
+                  ;========================================================
+     read_switch: 
+                  INPUT sw_in, sw_port        ;read switch input
+                  LOAD data, sw_in
+                  CALL get_lower_nibble
+                  STORE data, a_lsb           ;store A to data ram
+                  LOAD data, sw_in
+                  CALL get_upper_nibble
+                  STORE data, b_lsb           ;store B to data ram
+                  RETURN 
+                  ;========================================================
+                  ;routine: get_lower_nibble
+                  ;  function: get lower 4-bit of data
+                  ;  input register: data
+                  ;  output register: data
+                  ;========================================================
+get_lower_nibble: 
+                  AND data, UP_NIBBLE_MASK    ;clear upper nibble
+                  RETURN 
+                  ;========================================================
+                  ;routine: get_lupper_nible
+                  ;  function: get upper 4-bit of in_data
+                  ;  input register: data
+                  ;  output register: data
+                  ;========================================================
+get_upper_nibble: 
+                  SR0 data                    ;right shift 4 times
+                  SR0 data
+                  SR0 data
+                  SR0 data
+                  RETURN 
+                  ;========================================================
+                  ;routine: write_led
+                  ;  function: output 8 LSBs of result to 8 leds
+                  ;  temp register: data
+                  ;========================================================
+       write_led: 
+                  FETCH data, aabb_lsb
+                  ;sr0 data
+                  OUTPUT data, led_port
+                  RETURN 
+                  ;========================================================
+                  ;routine: square
+                  ;  function: calculate a*a + b*b
+                  ;     data/result stored in ram started w/ SQ_BASE_ADDR
+                  ;  temp register: s3, s4, s5, s6, data
+                  ;========================================================
+          square: 
+                  ;calculate a*a
+                  FETCH s3, a_lsb             ;load a
+                  FETCH s4, a_lsb             ;load a
+                  CALL mult_soft              ;calculate a*a
+                  STORE s6, aa_lsb            ;store lower byte of a*a
+                  STORE s5, aa_msb            ;store upper byte of a*a
+                  ;calculate b*b
+                  FETCH s3, b_lsb             ;load b
+                  FETCH s4, b_lsb             ;load b
+                  CALL mult_soft              ;calculate b*b
+                  STORE s6, bb_lsb            ;store lower byte of b*b
+                  STORE s5, 07                ;store upper byte of b*b
+                  ;calculate a*a+b*b
+                  FETCH data, aa_lsb          ;get lower byte of a*a
+                  ADD data, s6                ;add lower byte of a*a+b*b
+                  STORE data, aabb_lsb        ;store lower byte of a*a+b*b
+                  FETCH data, aa_msb          ;get upper byte of a*a
+                  ADDCY data, s5              ;add upper byte of a*a+b*b
+                  STORE data, aabb_msb        ;store upper byte of a*a+b*b
+                  LOAD data, 00               ;clear data, but keep carry
+                  ADDCY data, 00              ;get carry-out from previous +
+                  STORE data, aabb_cout       ;store carry-out of a*a+b*b
+                  RETURN 
+                  ;========================================================
+                  ;routine: mult_soft
+                  ;  function: 8-bit unsigned multiplier using
+                  ;           shift-and-add algorithm
+                  ;  input register:
+                  ;     s3: multiplicand
+                  ;     s4: multiplier
+                  ;  output register:
+                  ;     s5: upper byte of product
+                  ;     s6: lower byte of product
+                  ;  temp register: i
+                  ;========================================================
+       mult_soft: 
+                  LOAD s5, 00                 ;clear s5
+                  LOAD i, 08                  ;initialize loop index
+       mult_loop: 
+                  SR0 s4                      ;shift lsb to carry
+                  JUMP NC, shift_prod         ;lsb is 0
+                  ADD s5, s3                  ;lsb is 1
+      shift_prod: 
+                  SRA s5                      ;shift upper byte right,
+                  ;carry to MSB, LSB to carry
+                  SRA s6                      ;shift lower byte right,
+                  ;lsb of s5 to MSB of s6
+                  SUB i, 01                   ;dec loop index
+                  JUMP NZ, mult_loop          ;repeat until i=0
+                  RETURN 

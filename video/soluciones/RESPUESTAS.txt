@@ -1,0 +1,26 @@
+TAREA 1
+
+1. Archivo PDF del diagrama:
+2. bistream generado:
+3. Tiempo de procesado medido (ciclos de reloj):
+4. Comparativa con el procesado SW:
+
+
+TAREA 2
+
+1. Archivo PDF del diagrama:
+2. bistream generado:
+3. Tiempo de procesado medido (ciclos de reloj):
+4. Comparativa con el procesado SW:
+
+
+TAREA 3:
+
+1. Archivo PDF del diagrama:
+2. bistream generado:
+3. Tiempo de procesado medido (ciclos de reloj):
+4. Comparativa con el procesado SW:
+
+TAREA 4: 
+
+RESPUESTA:

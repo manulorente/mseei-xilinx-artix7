@@ -1,0 +1,9 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/Manuel/xilinx-workspace/EC24/SINCRONO/SINCRONO.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
+C:/Users/Manuel/xilinx-workspace/EC24/SINCRONO/SINCRONO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1579381967,verilog,C:/Users/Manuel/xilinx-workspace/EC24/SRC/TOP.vhd,,,clk_wiz_0,,,../../../../SINCRONO.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Manuel/xilinx-workspace/EC24/SINCRONO/SINCRONO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1579381967,verilog,,C:/Users/Manuel/xilinx-workspace/EC24/SINCRONO/SINCRONO.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../SINCRONO.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Manuel/xilinx-workspace/EC24/SRC/CD4RE.vhd,1579390619,vhdl,C:/Users/Manuel/xilinx-workspace/EC24/SRC/TOP.vhd,,,cd4re,,,,,,,,
+C:/Users/Manuel/xilinx-workspace/EC24/SRC/TOP.vhd,1579388733,vhdl,,,,top,,,,,,,,

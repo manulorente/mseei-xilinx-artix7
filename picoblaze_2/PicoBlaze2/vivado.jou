@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Feb  2 12:27:27 2020
+# Process ID: 5788
+# Current directory: C:/Users/Manuel/xilinx-workspace/EC44/PicoBlaze2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6372 C:\Users\Manuel\xilinx-workspace\EC44\PicoBlaze2\PicoBlaze2.xpr
+# Log file: C:/Users/Manuel/xilinx-workspace/EC44/PicoBlaze2/vivado.log
+# Journal file: C:/Users/Manuel/xilinx-workspace/EC44/PicoBlaze2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Manuel/xilinx-workspace/EC44/PicoBlaze2/PicoBlaze2.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Manuel/xilinx-workspace/EC44/PicoBlaze2/PicoBlaze2.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Manuel/xilinx-workspace/EC44/PicoBlaze2/PicoBlaze2.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw

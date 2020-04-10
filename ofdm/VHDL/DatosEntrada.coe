@@ -1,0 +1,3 @@
+; Memoria ROM de entrada con nuestros nombres
+memory_initialization_radix = 16  ;  que  indica  en  qué  base  numérica  debemos  interpretar  los  datos
+memory_initialization_vector =47 75 69 6C 6C 65 32 47 6F 6D 65 7A 32 4D 61 6E 75 65 6C 32 4C 6F 72 65 6E 74 65 32 4C 75 69 73 32 47 61 72 63 69 61;

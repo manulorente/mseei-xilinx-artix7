@@ -1,0 +1,736 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 12340
+License: Customer
+
+Current time: 	Tue Feb 04 09:18:06 CET 2020
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 75 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	MLORENTE
+User home directory: C:/Users/mlorente
+User working directory: D:/FPGA/ejercicios/EF31/UART_TB
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/mlorente/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/mlorente/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/mlorente/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	D:/FPGA/ejercicios/EF31/UART_TB/vivado.log
+Vivado journal file location: 	D:/FPGA/ejercicios/EF31/UART_TB/vivado.jou
+Engine tmp dir: 	D:/FPGA/ejercicios/EF31/UART_TB/.Xil/Vivado-12340-SEV-L011080
+
+GUI allocated memory:	207 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 531 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 55 MB (+55138kb) [00:00:12]
+// [Engine Memory]: 515 MB (+388532kb) [00:00:12]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 64 MB (+6073kb) [00:00:12]
+// bv (ch):  Open Project : addNotify
+// Opening Vivado Project: D:\FPGA\ejercicios\EF31\UART_TB\UART_TB.xpr. Version: Vivado v2018.1 
+// Tcl Message: open_project D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 587 MB. GUI used memory: 38 MB. Current time: 2/4/20 9:18:08 AM CET
+// [Engine Memory]: 587 MB (+48909kb) [00:00:17]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 630 MB (+14003kb) [00:00:21]
+// Tcl Message: open_project D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/FPGA/ejercicios/EF31/UART_TB' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// Project name: UART_TB; location: D:/FPGA/ejercicios/EF31/UART_TB; part: xc7a35tcpg236-1
+// [Engine Memory]: 663 MB (+1812kb) [00:00:26]
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 863.793 ; gain = 121.066 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 134 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(BEHAVIORAL) (TOP.vhd)]", 1); // B (D, ch)
+// Elapsed time: 34 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ch)
+// [GUI Memory]: 70 MB (+3515kb) [00:03:16]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+// 'k' command handler elapsed time: 5 seconds
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 875.395 ; gain = 0.000 
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Resetting Runs"); // bv (ch)
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// TclEventType: RUN_LAUNCH
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bv)
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Feb  4 09:21:34 2020] Launched synth_1... Run output will be captured here: D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 875.395 ; gain = 0.000 
+// [GUI Memory]: 75 MB (+1020kb) [00:03:42]
+dismissDialog("Starting Design Runs"); // bv (ch)
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 79 MB (+1174kb) [00:05:02]
+// Elapsed time: 89 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ch)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ch):  Run Simulation : addNotify
+// Tcl Message: launch_simulation 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 7000 ms.
+// TclEventType: LAUNCH_SIM
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'TOP' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj TOP_vlog.prj" 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 8000 ms.
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.srcs/sources_1/ip/clk_wiz_1/clk_wiz_clk_wiz.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module clk_wiz_clk_wiz INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.srcs/sources_1/ip/clk_wiz_1/clk_wiz.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module clk_wiz INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: "xvhdl --incr --relax -prj TOP_vhdl.prj" 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/BAUDGENERATOR.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity BAUDGENERATOR INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/FIFO16x8_bb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity FIFO 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/UART_RX.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity UART_RX INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/UART_TX.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity UART_TX INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/UART.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity UART INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/TOP.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity TOP 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 887.156 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '25' seconds 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' 
+// [GUI Memory]: 85 MB (+1458kb) [00:06:18]
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// Tcl Message: Vivado Simulator 2018.1 Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b21b8eb39f8540669919aea37d5f7544 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_behav xil_defaultlib.TOP xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis Completed simulation data flow analysis 
+// Tcl Message: Built simulation snapshot TOP_behav 
+// TclEventType: LAUNCH_SIM
+// [GUI Memory]: 90 MB (+778kb) [00:06:58]
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:53 . Memory (MB): peak = 887.156 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '53' seconds INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "TOP_behav -key {Behavioral:sim_1:Functional:TOP} -tclbatch {TOP.tcl} -log {simulate.log}" 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.1 
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source TOP.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 682 MB. GUI used memory: 47 MB. Current time: 2/4/20 9:25:04 AM CET
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: add_wave: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 901.473 ; gain = 5.855 
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 901.473 ; gain = 14.316 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:02:00 . Memory (MB): peak = 901.473 ; gain = 25.016 
+// 'd' command handler elapsed time: 119 seconds
+// Elapsed time: 119 seconds
+dismissDialog("Run Simulation"); // e (ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// ah (ch): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ch)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 692 MB. GUI used memory: 48 MB. Current time: 2/4/20 9:25:12 AM CET
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ch)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ch)
+// Tcl Command: 'rdi::info_commands {cd*}'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "cd d:/FPGA/ejercicios/EF31/SRC", true); // az (Y, ch)
+// Tcl Command: 'cd d:/FPGA/ejercicios/EF31/SRC'
+// Tcl Command: 'cd d:/FPGA/ejercicios/EF31/SRC'
+// Tcl Message: cd d:/FPGA/ejercicios/EF31/SRC 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source UART_tb.tcl", true); // az (Y, ch)
+// Tcl Command: 'source UART_tb.tcl'
+// Tcl Command: 'source UART_tb.tcl'
+// bv (ch):  Tcl Command Line : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: source UART_tb.tcl 
+// Tcl Message: # restart 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 701 MB (+4218kb) [00:07:48]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 9000 ms.
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+// Tcl Message: # add_wave {/UART/CLK} # add_wave {/UART/RESET} # add_wave {/UART/WR_UART} # add_wave {/UART/W_DATA} # add_wave {/UART/TX} # add_wave {/UART/TX_FULL} # add_wave {/UART/UART_TX/DIN} # add_wave {/UART/UART_TX/TX_START} # add_wave {/UART/UART_TX/tx_done_tick} # add_wave {/UART/UART_TX/S_TICK} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: # add_wave {/UART/UART_TX/state_reg} # add_wave {/UART/UART_TX/bit_index} # add_wave {/UART/FIFO_TX/WORDS} # add_force {/UART/CLK} -radix bin {0 0ns} {1 5ns} -repeat_every 10ns # add_force {/UART/RESET} -radix bin {1 0ns} {0 40ns} # run 1us 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 701 MB. GUI used memory: 48 MB. Current time: 2/4/20 9:25:43 AM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # add_force {/UART/WR_UART} -radix bin {1 0ns} # add_force {/UART/W_DATA} -radix hex {5A 0ns} {1C 30us} # run 100us # add_force {/UART/WR_UART} -radix bin {0 0ns} 
+// Tcl Message: force5 
+dismissDialog("Tcl Command Line"); // bv (ch)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 701 MB. GUI used memory: 48 MB. Current time: 2/4/20 9:25:46 AM CET
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "source UART_tb.tcl", true); // az (Y, ch)
+// Tcl Command: 'source UART_tb.tcl'
+// Tcl Command: 'source UART_tb.tcl'
+// bv (ch):  Tcl Command Line : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: source UART_tb.tcl 
+// Tcl Message: # restart 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+// Tcl Message: restart: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 914.777 ; gain = 1.930 
+// Tcl Message: # add_wave {/UART/CLK} # add_wave {/UART/RESET} # add_wave {/UART/WR_UART} # add_wave {/UART/W_DATA} # add_wave {/UART/TX} # add_wave {/UART/TX_FULL} # add_wave {/UART/UART_TX/DIN} # add_wave {/UART/UART_TX/TX_START} # add_wave {/UART/UART_TX/tx_done_tick} # add_wave {/UART/UART_TX/S_TICK} # add_wave {/UART/UART_TX/state_reg} # add_wave {/UART/UART_TX/bit_index} # add_wave {/UART/FIFO_TX/WORDS} # add_force {/UART/CLK} -radix bin {0 0ns} {1 5ns} -repeat_every 10ns # add_force {/UART/RESET} -radix bin {1 0ns} {0 40ns} # run 1us # add_force {/UART/WR_UART} -radix bin {1 0ns} # add_force {/UART/W_DATA} -radix hex {5A 0ns} {1C 30us} # run 100us 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 10000 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 704 MB. GUI used memory: 48 MB. Current time: 2/4/20 9:26:00 AM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # add_force {/UART/WR_UART} -radix bin {0 0ns} 
+// Tcl Message: force10 
+// Elapsed time: 11 seconds
+dismissDialog("Tcl Command Line"); // bv (ch)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ch)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, WORDS[4:0]]", 12); // a (s, ch)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, WORDS[4:0]]", 12); // a (s, ch)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 48 MB. Current time: 2/4/20 9:26:10 AM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "TOP ; TOP(BEHAVIORAL) ; VHDL Entity", 0, "TOP", 0, true); // d (O, ch) - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "TOP ; TOP(BEHAVIORAL) ; VHDL Entity", 0, "TOP", 0, true, false, false, false, false, true); // d (O, ch) - Double Click - Node
+// TclEventType: SIMULATION_OPEN_SOURCE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "UART ; UART(RTL) ; VHDL Entity", 2, "UART", 0, true); // d (O, ch) - Node
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "UART ; UART(RTL) ; VHDL Entity", 2, "UART", 0, true, false, false, false, false, true); // d (O, ch) - Double Click - Node
+// TclEventType: SIMULATION_OPEN_SOURCE
+// [GUI Memory]: 97 MB (+2447kb) [00:08:42]
+// Elapsed time: 28 seconds
+selectCodeEditor("UART.vhd", 115, 587); // cd (w, ch)
+selectCodeEditor("UART.vhd", 116, 580); // cd (w, ch)
+selectCodeEditor("UART.vhd", 116, 583); // cd (w, ch)
+selectCodeEditor("UART.vhd", 116, 583, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("UART.vhd", 116, 583); // cd (w, ch)
+selectCodeEditor("UART.vhd", 172, 572); // cd (w, ch)
+selectCodeEditor("UART.vhd", 91, 504); // cd (w, ch)
+selectCodeEditor("UART.vhd", 89, 520); // cd (w, ch)
+selectCodeEditor("UART.vhd", 261, 412); // cd (w, ch)
+selectCodeEditor("UART.vhd", 265, 416); // cd (w, ch)
+selectCodeEditor("UART.vhd", 284, 517); // cd (w, ch)
+selectCodeEditor("UART.vhd", 140, 110); // cd (w, ch)
+selectCodeEditor("UART.vhd", 140, 110, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("UART.vhd", 140, 110); // cd (w, ch)
+typeControlKey((HResource) null, "UART.vhd", 'c'); // cd (w, ch)
+selectCodeEditor("UART.vhd", 12, 535); // cd (w, ch)
+selectCodeEditor("UART.vhd", 10, 533); // cd (w, ch)
+typeControlKey((HResource) null, "UART.vhd", 'v'); // cd (w, ch)
+selectCodeEditor("UART.vhd", 37, 534); // cd (w, ch)
+selectCodeEditor("UART.vhd", 115, 532); // cd (w, ch)
+selectCodeEditor("UART.vhd", 221, 552); // cd (w, ch)
+selectCodeEditor("UART.vhd", 140, 551); // cd (w, ch)
+// Elapsed time: 13 seconds
+selectCodeEditor("UART.vhd", 170, 559); // cd (w, ch)
+selectCodeEditor("UART.vhd", 145, 556); // cd (w, ch)
+selectCodeEditor("UART.vhd", 114, 560); // cd (w, ch)
+selectCodeEditor("UART.vhd", 68, 552); // cd (w, ch)
+selectCodeEditor("UART.vhd", 106, 571); // cd (w, ch)
+selectCodeEditor("UART.vhd", 123, 551); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("UART.vhd", 147, 541); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: updateGUI() is taking  1209 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("UART.vhd", 217, 359); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("UART.vhd", 225, 315); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: DG_GRAPH_GENERATED
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aE (Q, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(BEHAVIORAL) (TOP.vhd), UART : UART(RTL) (UART.vhd)]", 3); // B (D, ch)
+// PAPropertyPanels.initPanels (FIFO16x8_bb.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(BEHAVIORAL) (TOP.vhd), UART : UART(RTL) (UART.vhd), FIFO_RX : FIFO(BlackBox) (FIFO16x8_bb.vhd)]", 7, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(BEHAVIORAL) (TOP.vhd), UART : UART(RTL) (UART.vhd), FIFO_RX : FIFO(BlackBox) (FIFO16x8_bb.vhd)]", 7, false, false, false, false, true, false); // B (D, ch) - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 732 MB. GUI used memory: 52 MB. Current time: 2/4/20 9:28:30 AM CET
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // ac (ai, ch)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// [Engine Memory]: 739 MB (+3573kb) [00:11:00]
+// Elapsed time: 31 seconds
+setFileChooser("D:/FPGA/ejercicios/EF31/SRC/FIFO.vhd");
+// 'dG' command handler elapsed time: 31 seconds
+// bv (ch):  Replace File : addNotify
+// Tcl Message: update_files -from_files D:/FPGA/ejercicios/EF31/SRC/FIFO.vhd -to_files D:/FPGA/ejercicios/EF31/SRC/FIFO16x8_bb.vhd -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file 'D:/FPGA/ejercicios/EF31/SRC/FIFO16x8_bb.vhd' with file 'D:/FPGA/ejercicios/EF31/SRC/FIFO.vhd'. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Replace File"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 105 MB (+3846kb) [00:11:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(BEHAVIORAL) (TOP.vhd), UART : UART(RTL) (UART.vhd), FIFO_RX : FIFO(BlackBox) (FIFO16x8_bb.vhd)]", 7, false); // B (D, ch)
+selectCodeEditor("UART.vhd", 269, 337); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("UART.vhd", 84, 313); // cd (w, ch)
+selectCodeEditor("UART.vhd", 84, 313, false, false, false, false, true); // cd (w, ch) - Double Click
+selectCodeEditor("UART.vhd", 84, 313); // cd (w, ch)
+selectCodeEditor("UART.vhd", 62, 413); // cd (w, ch)
+selectCodeEditor("UART.vhd", 57, 413); // cd (w, ch)
+selectCodeEditor("UART.vhd", 272, 145); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("UART.vhd", 265, 237); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("UART.vhd", 135, 396); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "UART.vhd", 'c'); // cd (w, ch)
+selectCodeEditor("UART.vhd", 264, 144); // cd (w, ch)
+selectCodeEditor("UART.vhd", 5, 157); // cd (w, ch)
+selectCodeEditor("UART.vhd", 5, 157); // cd (w, ch)
+selectCodeEditor("UART.vhd", 1, 164); // cd (w, ch)
+typeControlKey((HResource) null, "UART.vhd", 'v'); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("UART.vhd", 95, 284); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("UART.vhd", 90, 295); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("UART.vhd", 86, 285); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey(null, null, 'z');
+selectCodeEditor("UART.vhd", 97, 263); // cd (w, ch)
+selectCodeEditor("UART.vhd", 96, 249); // cd (w, ch)
+selectCodeEditor("UART.vhd", 154, 349); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("UART.vhd", 91, 299); // cd (w, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("UART.vhd", 95, 315); // cd (w, ch)
+selectCodeEditor("UART.vhd", 100, 329); // cd (w, ch)
+selectCodeEditor("UART.vhd", 98, 344); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("UART.vhd", 94, 231); // cd (w, ch)
+selectCodeEditor("UART.vhd", 99, 230); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("UART.vhd", 195, 225); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("UART.vhd", 63, 501); // cd (w, ch)
+// [GUI Memory]: 112 MB (+1065kb) [00:12:28]
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("UART.vhd", 65, 247); // cd (w, ch)
+selectCodeEditor("UART.vhd", 100, 242); // cd (w, ch)
+selectCodeEditor("UART.vhd", 105, 248); // cd (w, ch)
+selectCodeEditor("UART.vhd", 93, 502); // cd (w, ch)
+selectCodeEditor("UART.vhd", 100, 488); // cd (w, ch)
+selectCodeEditor("UART.vhd", 100, 521); // cd (w, ch)
+selectCodeEditor("UART.vhd", 84, 536); // cd (w, ch)
+selectCodeEditor("UART.vhd", 94, 554); // cd (w, ch)
+selectCodeEditor("UART.vhd", 97, 571); // cd (w, ch)
+selectCodeEditor("UART.vhd", 100, 588); // cd (w, ch)
+selectCodeEditor("UART.vhd", 100, 603); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("UART.vhd", 206, 456); // cd (w, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1*", 0); // k (j, ch)
+selectButton("RDIResource.WaveformUtils_WAVEFORM_CONFIGURATION_HAS_BEEN_MODIFIED_Cancel", "Cancel"); // JButton (A, G)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B (f, ch)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (ch):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 11000 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// Tcl Message: INFO: [USF-XSim-7] Finding pre-compiled libraries... 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'TOP' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj TOP_vlog.prj" 
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.srcs/sources_1/ip/clk_wiz_1/clk_wiz.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module clk_wiz 
+// Tcl Message: "xvhdl --incr --relax -prj TOP_vhdl.prj" 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/FIFO.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity FIFO 
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/UART.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity UART INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/TOP.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity TOP 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 945.367 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '13' seconds 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 945.367 ; gain = 0.000 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [USF-XSim-3] XSim::Elaborate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FPGA/ejercicios/EF31/UART_TB/UART_TB.sim/sim_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2018.1 Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b21b8eb39f8540669919aea37d5f7544 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_behav xil_defaultlib.TOP xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. 
+// Elapsed time: 55 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (b)
+// 'a' command handler elapsed time: 55 seconds
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: Starting static elaboration Completed static elaboration Starting simulation data flow analysis Completed simulation data flow analysis 
+// WARNING: updateGUI() is taking  2963 ms.
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART.vhd", 2); // k (j, ch)
+// Tcl Message: Built simulation snapshot TOP_behav 

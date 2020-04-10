@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Jan 15 10:16:23 2020
+# Process ID: 21608
+# Current directory: C:/Master/FPGA/ejercicios/EC21/HEX7SEG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21380 C:\Master\FPGA\ejercicios\EC21\HEX7SEG\HEX7SEG.xpr
+# Log file: C:/Master/FPGA/ejercicios/EC21/HEX7SEG/vivado.log
+# Journal file: C:/Master/FPGA/ejercicios/EC21/HEX7SEG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Master/FPGA/ejercicios/EC21/HEX7SEG/HEX7SEG.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 842.996 ; gain = 106.387
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed Jan 15 10:17:50 2020] Launched synth_1...
+Run output will be captured here: C:/Master/FPGA/ejercicios/EC21/HEX7SEG/HEX7SEG.runs/synth_1/runme.log
+[Wed Jan 15 10:17:50 2020] Launched impl_1...
+Run output will be captured here: C:/Master/FPGA/ejercicios/EC21/HEX7SEG/HEX7SEG.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 900.711 ; gain = 6.195
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A85A
+set_property PROGRAM.FILE {C:/Master/FPGA/ejercicios/EC21/HEX7SEG/HEX7SEG.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Master/FPGA/ejercicios/EC21/HEX7SEG/HEX7SEG.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+write_project_tcl -no_copy_sources -use_bd_files -force {C:/Master/FPGA/ejercicios/EC21/HEX7SEG.tcl}
+INFO: [Vivado-projutils-8] Tcl script 'HEX7SEG.tcl' generated in output directory 'C:/Master/FPGA/ejercicios/EC21'
+
+INFO: [Vivado-projutils-15] Please note that by default, the file path for the project source files were set wth respect to the 'origin_dir' variable in the
+ generated script. When this script is executed from the output directory, these source files will be referenced with respect to this 'origin_dir' path value.
+ In case this script was later moved to a different directory, the 'origin_dir' value must be set manually in the script with the path
+ relative to the new output directory to make sure that the source files are referenced correctly from the original project. You can also set the
+ 'origin_dir' automatically by setting the 'origin_dir_loc' variable in the tcl shell before sourcing this generated script. The 'origin_dir_loc'
+ variable should be set to the path relative to the new output directory. Alternatively, if you are sourcing the script from the Vivado command line,
+ then set the origin dir using '-tclargs --origin_dir <path>'. For example, 'vivado -mode tcl -source HEX7SEG.tcl -tclargs --origin_dir ".."
+
+WARNING: [Vivado-projutils-10] Found source(s) that were local or imported into the project. If this project is being source controlled, then
+ please ensure that the project source(s) are also part of this source controlled data. The list of these local source(s) can be found in the generated script
+ under the header section.
+
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210183A89A85A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210183A89A85A
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 15 10:47:31 2020...

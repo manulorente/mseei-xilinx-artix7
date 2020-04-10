@@ -1,0 +1,5 @@
+Uso: 
+	rgb888to565.exe infile888.raw outfile565.raw outfile444.raw outfile565.coe
+
+
+Las imágenes con resolución _444.raw están preparadas para ser visualizadas en irfanview como si fuera 565 bigendian

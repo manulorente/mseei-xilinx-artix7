@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/UART.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/ejercicios/EF31/SRC/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TOP
